@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Creative Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .page-content {
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .service-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .back-button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .services-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-content">
+        <h1>🛠️ Our Services</h1>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>🎨 Creative Design</h3>
+                <p>Brand identity, logos, and visual design that makes your business stand out.</p>
+            </div>
+            <div class="service-item">
+                <h3>💻 Web Development</h3>
+                <p>Custom websites and web applications built with modern technologies.</p>
+            </div>
+            <div class="service-item">
+                <h3>📱 Mobile Solutions</h3>
+                <p>Responsive design and mobile app development for all platforms.</p>
+            </div>
+            <div class="service-item">
+                <h3>📈 Digital Marketing</h3>
+                <p>SEO, social media, and online marketing strategies to grow your business.</p>
+            </div>
+            <div class="service-item">
+                <h3>🎥 Video Production</h3>
+                <p>Professional video content creation and editing services.</p>
+            </div>
+            <div class="service-item">
+                <h3>📊 Analytics</h3>
+                <p>Data analysis and insights to optimize your digital presence.</p>
+            </div>
+        </div>
+        <a href="javascript:window.close()" class="back-button">Back</a>
+    </div>
+</body>
+</html>
